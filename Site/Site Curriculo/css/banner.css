@@ -1,0 +1,42 @@
+.banner{
+    background-image: url(FUNDO.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}   
+.navbar-light a.navbar-brand{
+    color: #ffebd2;
+    font-size: 45px;
+    padding-left: 15px;
+}
+.navbar-light .navbar-nav a.nav-link{
+    color: #ffebd2;
+    padding: 15px;
+    font-family: 'Fira Code', monoespaçado;
+}
+.circulo{
+    height: 500px;
+    width: 500px;
+    border-radius: 250px;
+    background-image: url(https://media-exp1.licdn.com/dms/image/C4D03AQESmYI9fUdqXA/profile-displayphoto-shrink_200_200/0/1517262244046?e=1656547200&v=beta&t=VLmnLiQ54Xq5D7ykZLrgLbzQq2G_8GjPFuOXEEpqykY);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-circulo{
+    height: 500px; 
+    width: 500px; 
+    border-radius: 250px;
+}
+.paragrafo{
+    font-size: 20px;
+    color: #ffebd2;
+    align-self: center;
+    margin-left: 15px;
+}
+.conteudo-paragrafo{
+    display: grid;
+    grid-template-areas:
+    "paragrafo circulo";
+    grid-template-columns: 
+    1fr 1fr;
+}

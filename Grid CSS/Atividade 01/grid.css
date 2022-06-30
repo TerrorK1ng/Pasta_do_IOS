@@ -1,0 +1,49 @@
+body{
+    margin: 0%;
+}
+
+.grid{
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+    "cabecalho propaganda topico "
+    "conteudo propaganda topico "
+    "rodape rodape rodape ";
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-rows: 5fr 2fr 1fr;
+    gap: 10px 10px;
+}
+.topico{
+    grid-area: topico;
+    border: solid 2px rgb(0, 0, 0);
+    background-color: #00ff4c ;
+    border-radius: 5px;
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+    border: solid 2px rgb(0, 0, 0);
+    background-color: #ff00d4 ;
+    border-radius: 5px;
+}
+
+.propaganda{
+    grid-area: propaganda;
+    border: solid 2px rgb(0, 0, 0);
+    background-color: #00eaff ;
+    border-radius: 5px;
+}
+
+.conteudo{
+    grid-area: conteudo;
+    border: solid 2px rgb(0, 0, 0);
+    background-color: #1900ff ;
+    border-radius: 5px;
+}
+
+.rodape{
+    grid-area: rodape;
+    border: solid 2px rgb(0, 0, 0);
+    background-color: #ffe600 ;
+    border-radius: 5px;
+}

@@ -1,0 +1,18 @@
+header {
+    height: 10vh;
+    background-color: #fff;
+}
+
+main {
+    height: 100vh;
+    background-color: rgb(219, 92, 92);
+}
+
+footer {
+    background-color: rgb(100, 100, 100);
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+}

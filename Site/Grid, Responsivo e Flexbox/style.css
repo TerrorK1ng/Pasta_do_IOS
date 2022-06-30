@@ -1,0 +1,131 @@
+body{
+    background-color: #2a2f3d;
+    margin-left: 0;
+    margin-right: 0;
+}
+.conteudo{
+    display: grid;
+    grid-template-areas:
+    "cabecalho cabecalho cabecalho" 
+    "menu banner propaganda";
+    grid-template-columns: 15% 40% 25%;
+    gap: 0 15px;
+    justify-content: center;
+}
+.conteudo-2{
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas:
+    "box1 box2 box3";
+    grid-template-columns: 30% 30% 20%;
+    gap: 0 15px;
+}  
+
+.box1{
+    border: 1px solid #000;
+    border-radius: 15px;
+    background: #0e0b16;
+}
+.box2{
+    border: 1px solid #000;
+    border-radius: 15px;
+    background: #0e0b16;
+}
+ul li{
+    list-style-type: none;
+    padding: 5px 30px;
+    color: white;
+}
+.cabecalho{
+    margin-left: auto;
+    margin-right: auto;
+    width: 82%;
+    height: 15vh;
+    grid-area: cabecalho;
+    border: 1px solid #000;
+    border-radius: 15px;
+    background: #0e0b16;
+}
+.img-cab{
+    margin-top: -10px;
+    height: 85px;
+}
+.menu{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-area: menu;
+    border: 1px solid #000;
+    border-radius: 15px;
+    height: 20em;
+    background: #0e0b16;
+}
+.banner{
+    grid-area: banner;
+    border-radius: 15px;
+    background: #0e0b16;
+}
+.img-banner{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.propaganda{
+    grid-area: propaganda;
+    border: 1px solid #000;
+    border-radius: 15px;
+    background: #0e0b16;
+}
+.img-menu{  
+    height: 100px;
+    width: 100px;
+}
+.img-amarela{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.img-azul{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+footer{
+    margin-top: 15px;
+    border-radius: 15px;
+    background: #0e0b16;
+    width: 82%;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+}
+
+@media (max-width: 800px){
+    body{
+        background: slateblue;
+        margin: 0;
+    }
+    .cabecalho{
+        width: 100%;
+    }
+    .propaganda, .menu, .box3{
+        display: none;
+    }
+    .conteudo{
+        display: grid;
+        grid-template-areas:
+        "cabecalho cabecalho cabecalho" 
+        "menu banner propaganda";
+        grid-template-columns: 0% 100% 0%;
+    }
+    .conteudo2{
+        display: grid;
+        grid-template-areas:
+        "box1 box1 box1" 
+        "box2 box2 box2";
+        grid-template-columns: 100% 100% 0;
+    }
+}
